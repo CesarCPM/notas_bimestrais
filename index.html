@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação Bimestral</title>
+    <link rel="stylesheet" href="style.css" class="css">
+</head>
+
+<body>
+    <video autoplay muted loop id="video">
+        <source src="./src/sky-timelapse.mp4">
+    </video>
+    <div class="container">
+        <div class="box-title">
+            <h1 class="title">Notas finais</h1>
+            <div id="name">
+                Bem vindo...
+            </div>
+            <p id="subtitle">A média para aprovação é 7</p>
+        </div>
+        <div class="box-middle">
+            <h4>Insira suas notas bimestrais abaixo:</h4>
+            1º Bimestre: <input required type="number" name="nota" placeholder="Ex: 5.5">
+            2º Bimestre: <input required type="number" name="nota" placeholder="Ex: 5.5">
+            3º Bimestre: <input required type="number" name="nota" placeholder="Ex: 5.5">
+            4º Bimestre: <input required type="number" name="nota" placeholder="Ex: 5.5">
+            <button type="submit" onclick="quatroNotas()" disabled>Enviar</button>
+
+            <p class="warning">Preencha todos os quatro campos!</p>
+            <button class="reload" onclick="window.location.reload();">Nova Consulta</button>
+        </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
